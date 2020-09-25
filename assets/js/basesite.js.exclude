@@ -1,0 +1,494 @@
+﻿$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 5
+        }
+    }
+});
+$(".cross").show();
+$(".hamburger").hide();
+$(".menu").show();
+$(".hamburger").click(function () {
+    $(".menu").slideToggle("slow", function () {
+        $(".hamburger").hide();
+        $(".cross").show();
+    });
+});
+
+$(".cross").click(function () {
+    $(".menu").slideToggle("slow", function () {
+        $(".cross").hide();
+        $(".hamburger").show();
+    });
+});
+
+
+$('#ThumbnailCarousel').carousel({
+    interval: 4000
+});
+
+$('#ThumbnailCarousel2').carousel({
+    interval: 3000
+});
+
+$('#carousel-text').html($('#slide-content-0').html());
+
+//Handles the carousel thumbnails
+$('[id^=carousel-selector-]').click(function () {
+    var id_selector = $(this).attr("id");
+    var id = id_selector.substr(id_selector.length - 1);
+    var id = parseInt(id);
+    $('#myCarousel').carousel(id);
+});
+
+
+// When the carousel slides, auto update the text
+$('#myCarousel').on('slid', function (e) {
+    var id = $('.item.active').data('slide-number');
+    $('#carousel-text').html($('#slide-content-' + id).html());
+});
+
+// área referente ao tradutor menu
+$("#menubrasil").show();
+$("#menuingles").hide();
+
+// área referente ao tradutor botoes
+$("#idiomabrazil").hide();
+$("#idiomaingles").show();
+
+// área referente ao tradutor sessoes
+$("#tituloVideosBrasil").show();
+$("#tituloVideosIngles").hide();
+
+$("#tituloImagensIngles").hide();
+$("#tituloImagensBrasil").show();
+
+$("#tituloPinturasIngles").hide();
+$("#tituloPinturasBrasil").show();
+
+$("#titulo360Ingles").hide();
+$("#titulo360Brasil").show();
+
+$("#tituloSobreIngles").hide();
+$("#tituloSobreBrasil").show();
+
+$("#TextoSobreIngles").hide();
+$("#TextoSobreBrasil").show();
+
+
+$("#equipeIngles").hide();
+$("#equipeBrasil").show();
+
+$("#tituloPinturasIngles").hide();
+$("#tituloPinturasBrasil").show();
+
+$("#elizianeIngles").hide();
+$("#elizianeBrasil").show();
+
+$("#luanIngles").hide();
+$("#luanBrasil").show();
+
+
+$("#taynaIngles").hide();
+$("#taynaBrasil").show();
+
+$("#juanIngles").hide();
+$("#juanBrasil").show();
+
+$("#equipeIngles").hide();
+$("#equipeBrasil").show();
+
+$("#milaIngles").hide();
+$("#milaBrasil").show();
+
+$("#rodolfoIngles").hide();
+$("#rodolfoBrasil").show();
+
+$("#platoIngles").hide();
+$("#platoBrasil").show();
+
+$("#nacuiaIngles").hide();
+$("#nacuiaBrasil").show();
+
+$("#ShkmIngles").hide();
+$("#ShkmBrasil").show();
+
+$("#renanIngles").hide();
+$("#renanBrasil").show();
+
+
+// tradução dos modais
+
+
+$("#bambasBrasil").show();
+$("#bambasIngles").hide();
+
+$("#ultimaHoraBrasil").show();
+$("#ultimaHoraIngles").hide();
+
+$("#majestadeBrasil").show();
+$("#majestadeIngles").hide();
+
+$("#maluquinhoBrasil").show();
+$("#maluquinhoIngles").hide();
+
+$("#atentadosBrasil").show();
+$("#atentadosIngles").hide();
+
+$("#reizinhoBrasil").show();
+$("#reizinhoIngles").hide();
+
+$("#bicharadaBrasil").show();
+$("#bicharadaIngles").hide();
+
+$("#panteraBrasil").show();
+$("#panteraIngles").hide();
+
+$("#piratasBrasil").show();
+$("#piratasIngles").hide();
+
+$("#espantalhosBrasil").show();
+$("#espantalhosIngles").hide();
+
+$("#quemsaoBrasil").show();
+$("#quemsaoIngles").hide();
+
+$("#bolaBrasil").show();
+$("#bolaIngles").hide();
+
+$("#linguarudosBrasil").show();
+$("#linguarudosIngles").hide();
+
+
+//traduções finais
+
+
+$("#mapaBrasil").show();
+$("#mapaIngles").hide();
+
+$("#nomeBrasil").show();
+$("#nomeIngles").hide();
+
+$("#assuntoBrasil").show();
+$("#assuntoIngles").hide();
+
+$("#emailBrasil").show();
+$("#emailIngles").hide();
+
+$("#mensagemBrasil").show();
+$("#mensagemIngles").hide();
+
+
+$("#contatosBrasil").show();
+$("#contatosIngles").hide();
+
+$("#enviarBrasil").show();
+$("#enviarIngles").hide();
+
+
+$("#academicosBrasil").show();
+$("#academicosIngles").hide();
+
+$("#linksBrasil").show();
+$("#linksIngles").hide();
+
+
+//$("#linguarudosBrasil").show();
+//$("#linguarudosIngles").hide();
+
+//$("#linguarudosBrasil").show();
+//$("#linguarudosIngles").hide();
+
+//$("#linguarudosBrasil").show();
+//$("#linguarudosIngles").hide();
+
+
+$("#idiomaingles").click(function () {
+    $("#menubrasil").hide();
+    $("#menuingles").show();
+    $("#idiomabrazil").show();
+    $("#idiomaingles").hide();
+
+    $("#tituloVideosBrasil").hide();
+    $("#tituloVideosIngles").show();
+
+    $("#tituloImagensIngles").show();
+    $("#tituloImagensBrasil").hide();
+
+    $("#tituloPinturasIngles").show();
+    $("#tituloPinturasBrasil").hide();
+
+    $("#titulo360Ingles").show();
+    $("#titulo360Brasil").hide();
+
+    $("#tituloSobreIngles").show();
+    $("#tituloSobreBrasil").hide();
+
+    $("#TextoSobreIngles").show();
+    $("#TextoSobreBrasil").hide();
+
+
+    $("#equipeIngles").show();
+    $("#equipeBrasil").hide();
+
+
+    $("#tituloPinturasIngles").show();
+    $("#tituloPinturasBrasil").hide();
+
+
+    $("#taynaIngles").show();
+    $("#taynaBrasil").hide();
+
+
+    $("#elizianeIngles").show();
+    $("#elizianeBrasil").hide();
+
+    $("#luanIngles").show();
+    $("#luanBrasil").hide();
+
+    $("#juanIngles").show();
+    $("#juanBrasil").hide();
+
+    $("#equipeIngles").show();
+    $("#equipeBrasil").hide();
+
+    $("#milaIngles").show();
+    $("#milaBrasil").hide();
+
+    $("#rodolfoIngles").show();
+    $("#rodolfoBrasil").hide();
+
+    $("#platoIngles").show();
+    $("#platoBrasil").hide();
+
+    $("#nacuiaIngles").show();
+    $("#nacuiaBrasil").hide();
+
+    $("#ShkmIngles").show();
+    $("#ShkmBrasil").hide();
+
+    $("#renanIngles").show();
+    $("#renanBrasil").hide();
+
+    // modais
+
+
+
+
+    $("#bambasBrasil").hide();
+    $("#bambasIngles").show();
+
+    $("#ultimaHoraBrasil").hide();
+    $("#ultimaHoraIngles").show();
+
+    $("#majestadeBrasil").hide();
+    $("#majestadeIngles").show();
+
+    $("#maluquinhoBrasil").hide();
+    $("#maluquinhoIngles").show();
+
+    $("#atentadosBrasil").hide();
+    $("#atentadosIngles").show();
+
+    $("#reizinhoBrasil").hide();
+    $("#reizinhoIngles").show();
+
+    $("#bicharadaBrasil").hide();
+    $("#bicharadaIngles").show();
+
+    $("#panteraBrasil").hide();
+    $("#panteraIngles").show();
+
+    $("#piratasBrasil").hide();
+    $("#piratasIngles").show();
+
+    $("#espantalhosBrasil").hide();
+    $("#espantalhosIngles").show();
+
+    $("#quemsaoBrasil").hide();
+    $("#quemsaoIngles").show();
+
+    $("#bolaBrasil").hide();
+    $("#bolaIngles").show();
+
+    $("#linguarudosBrasil").hide();
+    $("#linguarudosIngles").show();
+
+    $("#mapaBrasil").hide();
+    $("#mapaIngles").show();
+
+    $("#nomeBrasil").hide();
+    $("#nomeIngles").show();
+
+    $("#assuntoBrasil").hide();
+    $("#assuntoIngles").show();
+
+    $("#emailBrasil").hide();
+    $("#emailIngles").show();
+
+    $("#mensagemBrasil").hide();
+    $("#mensagemIngles").show();
+
+    $("#contatosBrasil").hide();
+    $("#contatosIngles").show();
+
+    $("#enviarBrasil").hide();
+    $("#enviarIngles").show();
+
+
+    $("#academicosBrasil").hide();
+    $("#academicosIngles").show();
+
+    $("#linksBrasil").hide();
+    $("#linksIngles").show();
+
+});
+
+$("#idiomabrazil").click(function () {
+    $("#menubrasil").show();
+    $("#menuingles").hide();
+    $("#idiomabrazil").hide();
+    $("#idiomaingles").show();
+    $("#tituloVideosBrasil").show();
+    $("#tituloVideosIngles").hide();
+
+    $("#tituloImagensIngles").hide();
+    $("#tituloImagensBrasil").show();
+
+    $("#tituloPinturasIngles").hide();
+    $("#tituloPinturasBrasil").show();
+
+    $("#titulo360Ingles").hide();
+    $("#titulo360Brasil").show();
+
+    $("#tituloSobreIngles").hide();
+    $("#tituloSobreBrasil").show();
+
+    $("#TextoSobreIngles").hide();
+    $("#TextoSobreBrasil").show();
+
+
+    $("#equipeIngles").hide();
+    $("#equipeBrasil").show();
+
+    $("#tituloPinturasIngles").hide();
+    $("#tituloPinturasBrasil").show();
+
+    $("#elizianeIngles").hide();
+    $("#elizianeBrasil").show();
+
+    $("#luanIngles").hide();
+    $("#luanBrasil").show();
+
+    $("#taynaIngles").hide();
+    $("#taynaBrasil").show();
+
+    $("#juanIngles").hide();
+    $("#juanBrasil").show();
+
+    $("#equipeIngles").hide();
+    $("#equipeBrasil").show();
+
+    $("#milaIngles").hide();
+    $("#milaBrasil").show();
+
+    $("#rodolfoIngles").hide();
+    $("#rodolfoBrasil").show();
+
+    $("#platoIngles").hide();
+    $("#platoBrasil").show();
+
+    $("#nacuiaIngles").hide();
+    $("#nacuiaBrasil").show();
+
+    $("#ShkmIngles").hide();
+    $("#ShkmBrasil").show();
+
+    $("#renanIngles").hide();
+    $("#renanBrasil").show();
+
+    //modais
+
+    $("#bambasBrasil").show();
+    $("#bambasIngles").hide();
+
+    $("#ultimaHoraBrasil").show();
+    $("#ultimaHoraIngles").hide();
+
+    $("#majestadeBrasil").show();
+    $("#majestadeIngles").hide();
+
+    $("#maluquinhoBrasil").show();
+    $("#maluquinhoIngles").hide();
+
+    $("#atentadosBrasil").show();
+    $("#atentadosIngles").hide();
+
+    $("#reizinhoBrasil").show();
+    $("#reizinhoIngles").hide();
+
+    $("#bicharadaBrasil").show();
+    $("#bicharadaIngles").hide();
+
+    $("#panteraBrasil").show();
+    $("#panteraIngles").hide();
+
+    $("#piratasBrasil").show();
+    $("#piratasIngles").hide();
+
+    $("#espantalhosBrasil").show();
+    $("#espantalhosIngles").hide();
+
+    $("#quemsaoBrasil").show();
+    $("#quemsaoIngles").hide();
+
+    $("#bolaBrasil").show();
+    $("#bolaIngles").hide();
+
+    $("#linguarudosBrasil").show();
+    $("#linguarudosIngles").hide();
+
+
+    $("#mapaBrasil").show();
+    $("#mapaIngles").hide();
+
+    $("#nomeBrasil").show();
+    $("#nomeIngles").hide();
+
+    $("#assuntoBrasil").show();
+    $("#assuntoIngles").hide();
+
+    $("#emailBrasil").show();
+    $("#emailIngles").hide();
+
+    $("#mensagemBrasil").show();
+    $("#mensagemIngles").hide();
+
+    $("#contatosBrasil").show();
+    $("#contatosIngles").hide();
+
+    $("#enviarBrasil").show();
+    $("#enviarIngles").hide();
+
+
+    $("#academicosBrasil").show();
+    $("#academicosIngles").hide();
+
+    $("#linksBrasil").show();
+    $("#linksIngles").hide();
+
+});
+
+$(".botaoidiomaingles").click(function () {
+    $(this).hide();
+});
+
