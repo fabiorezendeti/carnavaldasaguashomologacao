@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Header
 --------------------------------------------------------------*/
 #header {
-    height: 150px;
+   
     transition: all 0.5s;
     z-index: 997;
     transition: all 0.5s;
@@ -296,9 +296,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .mobile-nav-toggle {
-  position: fixed;
-  right: 15px;
-  top: 22px;
+  position: absolute;
+  right: 5%;
+  top: 20px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -307,7 +307,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   outline: none !important;
   line-height: 1;
   cursor: pointer;
-  text-align: right;
+ 
 }
 
 .mobile-nav-toggle i {
