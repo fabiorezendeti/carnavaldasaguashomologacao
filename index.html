@@ -32,6 +32,42 @@
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
     <style type="text/css">
+       
+        .ver-mais {
+            max-height: 20%;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        
+        .ver-mais-total {
+            max-height: auto;
+            overflow: hidden;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .absolute-bottom {
+            position: absolute;
+            bottom: 0;
+            height: 40px;
+            background: #fff; /* For browsers that do not support gradients */
+            background: -webkit-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7)); /* For Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7)); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7)); /* For Firefox 3.6 to 15 */
+            background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.7)); /* Standard syntax */
+            z-index: 10;
+            width: 100%;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .mtop-50 {
+            margin-top: 50px;
+        }
+
         .contImg, .divGrande {
             position: relative;
             background-color: lightblue;
@@ -3197,22 +3233,39 @@
 
                                                     </a>
                                                 </h4>
-                                                <p id="vivianeBrasil" class="description monserrat-font" style="text-align:justify;min-height:320px;">
-                                                    Pesquisadora, produtora de conteúdo sobre a Amazônia e  artista visual. Em 2000 começou a navegar pelos rios da Amazônia seguindo o itinerário das festas populares e fazendo uma cartografia da cultura em aquarelas. <a href="#" class="btnVerMas"> </a>
-                                                    <input type="button" id="boton" class="btnVerMas" value="ver mais">
-                                                    <span class="oculto">
+
+                                                <div class="ver-mais">
+                                                    <p id="vivianeBrasil" class="description monserrat-font" style="text-align:justify;min-height:320px;">
+
+                                                        Pesquisadora, produtora de conteúdo sobre a Amazônia e  artista visual. Em 2000 começou a navegar pelos rios da Amazônia seguindo o itinerário das festas populares e fazendo uma cartografia da cultura em aquarelas.
+
                                                         A categoria artista viajante é o norte para se entender sua obra. As imagens produzidas compõem  uma espécie de diário de bordo que tem como carta itinerário as festas populares da Amazônia paraense. No lugar de desenhos, Vivi Menna se vale de instantâneos como referências. E esta escolha está expressa nos enquadramentos que destoam da técnica escolhida: aquarela. As aquarelas reunidas neste site integram uma série denominada: "Mapa Pictográfico da Cultura Ribeirinha da Amazônia Paraense." A partir de 2012 Vivi Menna ampliou os diálogos com as comunidades  ribeirinhas  por meio da criação do projeto de extensão Cartografias Amazônicas que com apoio dos estudantes de comunicação da Estácio começou a produzir  narrativas em múltiplas plataformas sobre a cultura ribeirinha.
-                                                    </span>
 
 
-                                                </p>
-                                                <p id="vivianeIngles" class="description monserrat-font" style="text-align:justify;min-height:320px;">
-                                                    Viviane Menna Barreto is an academic researcher, content producer about the amazonian region, and a visual artist. In 2000 she started to sail by the Amazon rivers following the itinerary of the traditional parties creating cartographies of cultures in watercolors.<a href="#" class="btnVerMas"> </a>
-                                                    <input type="button" id="boton" class="btnVerMas" value="ver mais">
-                                                    <span class="oculto">
+                                                    </p>
+                                                    <div class="absolute-bottom"></div>
+                                                </div>
+                                                <!--<div class="ver-mais-ingles">
+                                                    <p id="vivianeIngles" class="description monserrat-font" style="text-align:justify;min-height:320px;">
+                                                        Viviane Menna Barreto is an academic researcher, content producer about the amazonian region, and a visual artist. In 2000 she started to sail by the Amazon rivers following the itinerary of the traditional parties creating cartographies of cultures in watercolors.
+
                                                         The conception of “traveler artist” is the key to understand her work. The images produced are a kind of a traveler notebook with the course of the traditional parties of Amazon of Pará. But, instead of paintings, Vivi Menna uses instant pictures as references. The watercolors reunited in this website compose a series called: “Pictographic Map of the Riverside Culture from Amazon of Pará”. Since 2012, Vivi Menna amplified the dialogs with the riverside communities, through the creation of the project Amazonic Cartographies, with the support of the graduating students of communication - from Estacio University - starts to reproduce the narratives in multi-platforms about the culture from the riverside communities of Pará.
-                                                    </span>
-                                                </p>
+
+                                                    </p>
+                                                    <div class="absolute-bottom"></div>
+                                                </div>-->
+                                                <a href="" class="btn-ver-mais block text-center">Ver mais</a>
+                                                <!--<p id="vivianeBrasil" class="description monserrat-font" style="text-align:justify;min-height:320px;">
+
+        Pesquisadora, produtora de conteúdo sobre a Amazônia e  artista visual. Em 2000 começou a navegar pelos rios da Amazônia seguindo o itinerário das festas populares e fazendo uma cartografia da cultura em aquarelas.
+        <input type="button" id="boton" class="btnVerMas" value="ver mais">
+        <span class="oculto">
+            A categoria artista viajante é o norte para se entender sua obra. As imagens produzidas compõem  uma espécie de diário de bordo que tem como carta itinerário as festas populares da Amazônia paraense. No lugar de desenhos, Vivi Menna se vale de instantâneos como referências. E esta escolha está expressa nos enquadramentos que destoam da técnica escolhida: aquarela. As aquarelas reunidas neste site integram uma série denominada: "Mapa Pictográfico da Cultura Ribeirinha da Amazônia Paraense." A partir de 2012 Vivi Menna ampliou os diálogos com as comunidades  ribeirinhas  por meio da criação do projeto de extensão Cartografias Amazônicas que com apoio dos estudantes de comunicação da Estácio começou a produzir  narrativas em múltiplas plataformas sobre a cultura ribeirinha.
+        </span>
+        <a href="#" class="btnVerMas"> </a>
+
+    </p>-->
+                                             
                                                 <footer>
                                                     <p class="description" style="text-align:center">
                                                         <a href="https://www.instagram.com/vivi.menna/" target="_blank">
@@ -4622,22 +4675,28 @@
     </script>
     <script src="https://smtpjs.com/v3/smtp.js">
     </script>
+
     <script type="text/javascript">
-        jQuery.fn.toggleText = function (a, b) {
-            return this.html(this.html().replace(new RegExp("(" + a + "|" + b + ")"), function (x) { return (x == a) ? b : a; }));
-        }
-
         $(document).ready(function () {
-            $('.tgl').before('<span> ver mais.. </span>');
-            $('.tgl').css('display', 'none')
-            $('span', '#box-toggle').click(function () {
-                $(this).next().slideToggle('slow')
-                    .siblings('.tgl:visible').slideToggle('fast');
+            $(".btn-ver-mais").each(function () {
+                $(this).click(function (e) {
+                    e.preventDefault();
+             
+                       if ($(this).prev("div").hasClass("ver-mais")) {
+                            $(this).prev("div").addClass("ver-mais-total").removeClass("ver-mais");
+                            $(this).prev("div").children("div").removeClass("absolute-bottom");
+                            $(this).html("Ver menos");
+                    } else if ($(this).prev("div").hasClass("ver-mais-total")) {
+                        $(this).prev("div").addClass("ver-mais").removeClass("ver-mais-total");
+                        $(this).prev("div").children("div").addClass("absolute-bottom");
+                        $(this).html("Ver mais");
+                    }
 
-
-
+                });
             });
-        })
+           
+           
+        });
     </script>
 </body>
 </html>
